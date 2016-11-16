@@ -1,0 +1,282 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+
+p {
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    border: 0;
+    height: 5vh;
+}
+
+.jumbotron h4,
+.jumbotron .h4 {
+    font-size: 4vw;
+    font-family: 'Dosis', sans-serif;
+    color: antiquewhite;
+}
+
+.headerWrapper {
+    background-image: url("../img/header.jpg");
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+    font-size: 12vw;
+    font-family: 'Dosis', sans-serif;
+    color: antiquewhite;
+}
+
+.jumbotron h3,
+.jumbotron .h3 {
+    font-size: 6vw;
+    font-family: 'Dosis', sans-serif;
+    color: antiquewhite;
+}
+
+#landingJumbotron {
+    height: 100vh;
+    max-width: 100%;
+    background-image: url("../img/header.jpg");
+    margin: 0;
+}
+
+#landingJumbotron h1,
+p {
+    color: antiquewhite;
+    font-family: 'Dosis', sans-serif;
+}
+
+.landingJumbotronButton {
+    font-family: 'Dosis', sans-serif;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: antiquewhite;
+    width: 125px;
+}
+
+.jumbotronGlyphicon {
+    font-size: 80px;
+}
+
+#subBreadtText {
+    padding-bottom: 100px;
+    font-size: 48px;
+    font-family: 'Dosis', sans-serif;
+    color: antiquewhite;
+}
+
+.sectionContainer h1,
+.sectionContainers .h1 {
+    color: black;
+    font-size: 10vw;
+    font-family: 'Dosis', sans-serif;
+}
+
+.sectionContainer {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.sectionContainer input,
+select {
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-color: white;
+}
+
+.sectionContainer p {
+    color: black;
+    font-size: 20px;
+}
+
+.sectionContainer h4 {
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    font-size: 32px;
+}
+
+#sectionHeader1{
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+
+footer {
+    background-color: #222;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+footer p , a{
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    margin: 0;
+
+}
+
+.tooltipBox {
+    display: none;
+    top:10px;
+    height: auto;
+    width: 300px;
+    background-color: #222;
+    position: relative;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+
+.tooltipBox p {
+    color: white;
+    font-size: 18px;
+}
+
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 48px;
+    color: antiquewhite;
+    font-family: 'Dosis', sans-serif;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sectionTextWrapper {
+    padding-left: 25px
+}
+
+@media(max-width:992px) {
+    .landingJumbotronButton {
+        width: 100px;
+        font-size: 15px;
+    }
+    #subBreadText {
+        padding-bottom: 100px;
+        font-size: 48px;
+        font-family: 'Dosis', sans-serif;
+        color: antiquewhite;
+    }
+    #landingJumbotron h1 {
+        font-size: 76px;
+    }
+    .tooltipBox {
+        margin-left: 0;
+    }
+    .sectionTextWrapper {
+    padding-left: 0;
+    }
+    #sectionHeader1{
+        padding-right:25%;
+        font-weight: 700;
+    }
+}
+
+.questionHeader {
+    font-size:48px;
+    color:black;
+}
+
+.questionWrapper {
+    width:600px;
+    height: 75px;
+    text-decoration: none!important;
+    color: black;
+}
+
+.questionText {
+    font-size:18px;
+    color:black;
+}
+
+.pageHeader {
+    font-size:48px;
+    font-family: 'Dosis', sans-serif;
+    font-weight:bolder;
+}
+
+#submitButton {
+    width:200px;
+    height:50px;
+    background-color:white; 
+    font-family: 'Dosis',sans-serif;
+    margin-top: 50px;
+    border-radius:5px;
+    text-decoration:none;
+    border:none;
+    font-size: 30px;
+}
+
+#section3 
+    height: auto;
+}
+
+.sectionArrow {
+    font-size:32px;
+    opacity:85%;
+    position:fixed;
+}
+
+#sectionIncrementer {
+    top:30px;
+    right:32px;
+}
+
+#sectionDecrementer {
+    top:30px;
+    right:64px;
+}

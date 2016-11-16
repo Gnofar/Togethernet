@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Togethernet</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Oxygen" rel="stylesheet">
+</head>
+
+<body>
+    <span class="glyphicon glyphicon-arrow-down sectionArrow" id="sectionIncrementer"></span>
+    <span class="glyphicon glyphicon-arrow-up sectionArrow" id="sectionDecrementer"></span>
+    <header>
+        <div class="jumbotron text-center" id="landingJumbotron">
+            <div class="" id="headerWrapper">
+                <h1>Togethernet </h1>
+                <span class="text-center typed" id="subBreadText" style="padding-bottom:50px;   
+        font-size: 40px;
+        font-family: 'Dosis', sans-serif;
+        color: antiquewhite" id="test">Togethernet är vi... <span class="typed-cursor ">|</span></span>
+                <div class="row" style="padding-top:75px;">
+                    <div class="col-md-4 col-xs-4">
+                        <div class="card">
+                            <span class="glyphicon glyphicon-info-sign" style="font-size:80px; color:white;"> </span>
+                            <div class="card-block">
+                                <h4 class="card-title" style="color:white;">Information</h4>
+                            </div>
+                            <button id="infoButton" class="landingJumbotronButton" style="background-color:#424242;" href="#section1"> 
+                            Info</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="card">
+                            <span class="glyphicon glyphicon-heart" style="font-size:80px; color:#B71C1C;"> </span>
+                            <div class="card-block">
+                                <h4 class="card-title" style="color:white;">Om Togethernet</h4>
+                            </div>
+                            <button id="aboutButton" class="landingJumbotronButton" style="background-color:#424242;">Information</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="card">
+                            <span class="glyphicon glyphicon-pencil" style="font-size:80px; color:white"> </span>
+                            <div class="card-block">
+                                <h4 class="card-title" style="color:white;">Anmäl dig</h4>
+                            </div>
+                            <button id="signButton" class="landingJumbotronButton" style="background-color:#424242; color:white;">Anmälan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- "Om Togethernet" -->
+    <div class="sectionContainer container-fluid " id="section1" style="background-color:#FFF3E0;">
+        <h1 id="sectionHeader1" class="text-right"> Togethernet </h1>
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <img src="img/logo-small.png" class="img-responsive" style="float:left;">
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <!--
+                <h2 class="text-center" style="color:black; font-style:italic;"> "typ ett coolt citat"</h2>-->
+                <p style="padding-left:10px;">Av elever, för elever. Det är vi på Togethernet. En tradition som passerats ner i årskurserna på SSIS, sedan skolans start 2013, med målet att varje termin anordna ett Lan för vår skola. Det första Lan som anordnades 20xx började som många andra stora evenemang, med en grupp vänner som ville ha kul. Därefter, började fler och fler – i takt med att skolan blev större – vilja vara med dem också. I sin tur blev det då evenemanget större och större. (*) Allting på skolan, för elever – av elever. Läs noga regler och information *här* och sedan ses vi den 2:a december. Med vänlig hälsning, vi på Togethernet.</p>
+            </div>
+        </div>
+    </div>
+    <!--"information" -->
+    <div class="sectionContainer container-fluid" id="section2" style="background-color:#FFE0B2;">
+        <h1 class="text-center sectionHeader">Information</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <p>På Togethernet har vi egentligen inga strikta, gråa, och tråkiga regler, vi utgår helt enkelt från några av trivselreglerna från skolan och anpassar dessa till våran unika lanmiljö för att skapa en miljö som alla ska känna sig tryga i.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--"Anmälan"-->
+    <div class="sectionContainer container-fluid" id="section3" style="background-color:#FFCC80">
+        <h1 class="text-center sectionHeader">Anmälan till Togethernet</h1>
+        <form>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <h4 class="text-center"> Namn <span class="glyphicon glyphicon-info-sign" id="tooltip1"></span> </h4>
+
+                    <input type="text" class="center-block">
+                    <div class="tooltipBox center-block" id="tooltipbox1">
+                        <p class="text-center"> Använd ditt förnamn och efternamn, vi kommer använda ditt namn för att identifiera dig i placering. Togethernet delar aldrig privat information med tredjeparter.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h4 class="text-center"> Email <span class="glyphicon glyphicon-info-sign" id="tooltip2"></span></h4>
+                    <input type="text" class="center-block">
+                    <div class="tooltipBox center-block" id="tooltipbox2">
+                        <p class="text-center"> Använd endast din SSIS email. Vi kommer att använda denna email för att kunna verifiera dig, dubbelkolla stavfel</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h4 class="text-center"> Betalningsmetod <span class="glyphicon glyphicon-info-sign" id="tooltip3"></span>
+                    </h4>
+                    <select class="center-block">
+                    <option>Kontant</option>
+                    <option>Swish</option>
+                </select>
+                    <div class="tooltipBox center-block" id="tooltipbox3">
+                        <p class="text-center">Använder du Swish så skickar du pengar till XXXX och signerar med samma namn som du anmälde dig med, var noga med att betala först efter du har fått ditt konfirmations email. Betalar du kontant så börjar vi ta emot betalningar under dagen då lanet sker</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="center-block" id="submitButton" href="#section3"> Skicka in       
+                    </button>
+                    <p style="font-style:italic;">pssst... Har du redan bokat kan du klicka <a href="https://lan.ssis.nu/verify">här</a> för att se din status</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>©Jacob Larsson @<a href="https://twitter.com/Sualannaigh">twitter.com/Sualannaigh</a>
+            <p>Proudly (also) made without Wordpress</p>
+    </footer>
+    <!--  JAVASCRIPTS  -->
+    <script src="js/countdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/typed.js"></script>
+    <!-- Javascripts end -->
+</body>
+
+</html>

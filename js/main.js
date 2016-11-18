@@ -1,54 +1,4 @@
 //For input verifier//
-/*
-var author = document.getElementById('author');
-var title = document.getElementById('title');
-var article = document.getElementById('article');
-var warningMsg = '';
-
-function updateValue() {
-    document.getElementById('text').innerHTML = checkValue("author");
-}
-
-function authorCheck() {
-    var lengthInt = document.getElementById('author');
-    console.log("hej");
-    if (lengthInt.value.length < 20) {
-        document.getElementById('authorWrapper').style['background-color'] = "red";
-        warningMsg = 'This name needs to be longer';
-    } else {
-        document.getElementById('authorWrapper').style['background-color'] = "green";
-    }
-}
-
-function titleCheck() {
-    var lengthInt = document.getElementById('title');
-    console.log("hej");
-    if (document.getElementById('title').value.length < 20) {
-        document.getElementById('titleWrapper').style['background-color'] = "red";
-        warningMsg = 'This name needs to be longer';
-    } else {
-        document.getElementById('titleWrapper').style['background-color'] = "green";
-    }
-}
-
-function articleCheck() {
-    var lengthInt = document.getElementById('author');
-    console.log("hej");
-    if (document.getElementById('article').value.length < 30) {
-        document.getElementById('articleWrapper').style['background-color'] = "red";
-        warningMsg = 'This article needs to be longer';
-    } else {
-        document.getElementById('articleWrapper').style['background-color'] = "green";
-    }
-}
-author.addEventListener('blur', authorCheck, 'false');
-title.addEventListener('blur', titleCheck, 'false');
-article.addEventListener('blur', articleCheck, 'false');
-function checkValue(inValue) {
-    var returnValue = document.getElementById(inValue).value.length;
-    return returnValue;
-}
-*/
 //End of section//
 
 //Countdown timer
@@ -66,6 +16,37 @@ function countdown()
 //End of Scrolltop section// 
 
 $(document).ready(function () {
+    var name = document.getElementById('inputField1');
+    var email = document.getElementById('inputField2');
+    var payment = document.getElementById('inputField3');
+
+    function nameCheck() {
+        if (document.getElementById('inputField1').value.length < 30 && document.getElementById('inputField1').value.length > 5) {
+            document.getElementById('inputField1').style['background-color'] = "#A5D6A7";
+            
+        } else {
+            document.getElementById('inputField1').style['background-color'] = "#EF5350";
+            window.alert('Detta fält måste vara 5-30 karaktärer långt, använd inte några specialla tecken eller siffror.');
+        }
+    }
+
+    function emailCheck() {
+        if (document.getElementById('inputField2').value.length < 20 && document.getElementById('inputField2').value.length > 10) {
+            document.getElementById('inputField2').style['background-color'] = "#A5D6A7";
+        } else {
+            document.getElementById('inputField2').style['background-color'] = "#EF5350";
+            window.alert('Detta fält måste vara 10-20 karaktärer långt, använd endast din SSIS email');
+        }
+    }
+
+    function paymentCheck() {
+        document.getElementById('inputField3').style['background-color'] = "#A5D6A7";
+    }
+    
+    name.addEventListener('blur', nameCheck, 'false');
+    email.addEventListener('blur', emailCheck, 'false');
+    payment.addEventListener('blur', paymentCheck, 'false');
+
     $('#infoButton').click(function () {
         $('html, body').animate({
             scrollTop: $("#section1").offset().top
@@ -103,8 +84,8 @@ $(document).ready(function () {
         $('#tooltipbox3').show("slow", function () {}).delay(3000);
         $('#tooltipbox3').hide("slow", function () {});
     });
-    
-    $('body').on('scroll',function(){
+
+    $('body').on('scroll', function () {
         console.log(Math.floor($('body').scrollTop()));
     })
 })

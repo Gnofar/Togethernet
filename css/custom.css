@@ -250,7 +250,7 @@ footer p , a{
 }
 
 #submitButton {
-    width:200px;
+    width:2s00px;
     height:50px;
     background-color:white; 
     font-family: 'Dosis',sans-serif;
@@ -261,22 +261,7 @@ footer p , a{
     font-size: 30px;
 }
 
-#section3 
+#section3 {
     height: auto;
 }
 
-.sectionArrow {
-    font-size:32px;
-    opacity:85%;
-    position:fixed;
-}
-
-#sectionIncrementer {
-    top:30px;
-    right:32px;
-}
-
-#sectionDecrementer {
-    top:30px;
-    right:64px;
-}

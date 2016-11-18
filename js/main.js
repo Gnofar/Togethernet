@@ -102,11 +102,12 @@ $(document).ready(function () {
     $('#tooltip3').on('click', function () {
         $('#tooltipbox3').show("slow", function () {}).delay(3000);
         $('#tooltipbox3').hide("slow", function () {});
-
     });
-});
-
-var scrollTop
+    
+    $('body').on('scroll',function(){
+        console.log(Math.floor($('body').scrollTop()));
+    })
+})
 
 $(function () {
     $("#subBreadText").typed({
@@ -114,8 +115,4 @@ $(function () {
         typeSpeed: 30
     });
 });
-
-$(document).on('scroll', function () {
-})
-
 console.log('Javascripts loads');

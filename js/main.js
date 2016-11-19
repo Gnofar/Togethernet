@@ -1,5 +1,4 @@
 //For input verifier//
-//End of section//
 
 //Countdown timer
 /*
@@ -16,6 +15,7 @@ function countdown()
 //End of Scrolltop section// 
 
 $(document).ready(function () {
+    //For input verifier//
     var name = document.getElementById('inputField1');
     var email = document.getElementById('inputField2');
     var payment = document.getElementById('inputField3');
@@ -46,7 +46,7 @@ $(document).ready(function () {
     name.addEventListener('blur', nameCheck, 'false');
     email.addEventListener('blur', emailCheck, 'false');
     payment.addEventListener('blur', paymentCheck, 'false');
-
+    //End of section//
     $('#infoButton').click(function () {
         $('html, body').animate({
             scrollTop: $("#section1").offset().top

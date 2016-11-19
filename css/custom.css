@@ -231,20 +231,22 @@ footer p , a{
 }
 
 .questionHeader {
-    font-size:48px;
+    font-size:48px!important;
     color:black;
+    font-weight: bolder;
 }
 
 .questionWrapper {
-    width:600px;
-    height: 75px;
-    text-decoration: none!important;
+    width:auto;
+    height: auto;
     color: black;
+    padding-bottom: 50px;
 }
 
 .questionText {
     font-size:18px;
     color:black;
+    font-weight: bold
 }
 
 .pageHeader {
@@ -254,7 +256,7 @@ footer p , a{
 }
 
 #submitButton {
-    width:2s00px;
+    width:200px;
     height:50px;
     background-color:white; 
     font-family: 'Dosis',sans-serif;
@@ -268,6 +270,9 @@ footer p , a{
 #section3 {
     height: auto;
 }
-
+#section2 .card{
+    background-color: #FF6F00;
+    border-radius: 5px;
+}
 
 

@@ -85,14 +85,14 @@ $(document).ready(function () {
             console.log(Math.floor($('body').scrollTop()));
         });
         //Cookie oven //
-    $("#aboutButton").click(function () {
+    $("submitButton").click(function () {
             document.cookie = "true";
         })
         if(document.cookie ="true"){
             $( "input[type='text']" ).prop({
             disabled: true
             });
-    $(":submit").prop('disabled', true);
+    $(".formWrapper").prop('disabled', true);
     $("#inputField3").prop('disabled', true);
     $(".formWrapper").css('backgroundColor', "rgba(0,0,0,0.2)");
     $("#submitButton").text("Redan skickad");

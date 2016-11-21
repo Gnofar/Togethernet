@@ -1,5 +1,3 @@
-//For input verifier//
-
 //Countdown timer
 /*
 function countdown()
@@ -10,9 +8,7 @@ function countdown()
 */
 //End of countdown section//
 
-//Scrolltop verifier
 
-//End of Scrolltop section// 
 
 $(document).ready(function () {
     //For input verifier//
@@ -22,8 +18,8 @@ $(document).ready(function () {
 
     function nameCheck() {
         if (document.getElementById('inputField1').value.length < 30 && document.getElementById('inputField1').value.length > 5) {
-         document.getElementById('inputField1').style['background-color'] = "#A5D6A7";
-            
+            document.getElementById('inputField1').style['background-color'] = "#A5D6A7";
+
         } else {
             document.getElementById('inputField1').style['background-color'] = "#EF5350";
             window.alert('Detta fält måste vara 5-30 karaktärer långt, använd inte några specialla tecken eller siffror.');
@@ -42,7 +38,7 @@ $(document).ready(function () {
     function paymentCheck() {
         document.getElementById('inputField3').style['background-color'] = "#A5D6A7";
     }
-    
+
     name.addEventListener('blur', nameCheck, 'false');
     email.addEventListener('blur', emailCheck, 'false');
     payment.addEventListener('blur', paymentCheck, 'false');
@@ -86,8 +82,22 @@ $(document).ready(function () {
     });
 
     $('body').on('scroll', function () {
-        console.log(Math.floor($('body').scrollTop()));
-    })
+            console.log(Math.floor($('body').scrollTop()));
+        });
+        //Cookie oven //
+    $("#aboutButton").click(function () {
+            document.cookie = "true";
+        })
+        if(document.cookie ="true"){
+            $( "input[type='text']" ).prop({
+            disabled: true
+            });
+    $(":submit").prop('disabled', true);
+    $("#inputField3").prop('disabled', true);
+    $(".formWrapper").css('backgroundColor', "rgba(0,0,0,0.2)");
+    $("#submitButton").text("Redan skickad");
+        }
+        //No more cookies for you!// 
 })
 
 $(function () {

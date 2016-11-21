@@ -4,7 +4,6 @@ body {
     overflow-x: hidden !important;
 }
 
-
 p {
     font-family: 'Dosis', sans-serif;
 }
@@ -101,7 +100,7 @@ select {
     font-size: 30px;
     background-color: white;
     border-radius: 5px;
-    border: 2px solid rgba(130,130,130,.2);
+    border: 2px solid rgba(130, 130, 130, .2);
 }
 
 .sectionContainer p {
@@ -115,7 +114,7 @@ select {
     font-size: 32px;
 }
 
-#sectionHeader1{
+#sectionHeader1 {
     padding-bottom: 10px;
     padding-right: 100px;
 }
@@ -127,16 +126,16 @@ footer {
     margin: 0;
 }
 
-footer p , a{
+footer p,
+a {
     font-family: 'Dosis', sans-serif;
-    color:white;
+    color: white;
     margin: 0;
-
 }
 
 .tooltipBox {
     display: none;
-    top:10px;
+    top: 10px;
     height: auto;
     width: 300px;
     background-color: #222;
@@ -149,7 +148,6 @@ footer p , a{
     color: white;
     font-size: 18px;
 }
-
 
 .typed-cursor {
     opacity: 1;
@@ -219,60 +217,85 @@ footer p , a{
         margin-left: 0;
     }
     .sectionTextWrapper {
-    padding-left: 0;
+        padding-left: 0;
     }
-    #sectionHeader1{
-        padding-right:25%;
+    #sectionHeader1 {
+        padding-right: 25%;
         font-weight: 700;
     }
     .sectionHeader {
-    padding-bottom:0px;
-}
+        padding-bottom: 0px;
+    }
 }
 
 .questionHeader {
-    font-size:48px!important;
-    color:black;
+    font-size: 48px!important;
+    color: black;
     font-weight: bolder;
 }
 
 .questionWrapper {
-    width:auto;
+    width: auto;
     height: auto;
     color: black;
     padding-bottom: 50px;
 }
 
 .questionText {
-    font-size:18px;
-    color:black;
+    font-size: 18px;
+    color: black;
     font-weight: bold
 }
 
 .pageHeader {
-    font-size:48px;
+    font-size: 48px;
     font-family: 'Dosis', sans-serif;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 #submitButton {
-    width:200px;
-    height:50px;
-    background-color:white; 
-    font-family: 'Dosis',sans-serif;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
     margin-top: 50px;
-    border-radius:5px;
-    text-decoration:none;
-    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
     font-size: 30px;
 }
 
 #section3 {
     height: auto;
 }
-#section2 .card{
+
+.faqCards {
     background-color: #FF6F00;
     border-radius: 5px;
 }
 
+.glyphiconCards {
+    width: 100%;
+    height: auto;
+}
 
+#glyphiconHeader {
+    font-size: 100px!important;
+}
+
+#section2 p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+#section2 h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#section2 h4 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+}

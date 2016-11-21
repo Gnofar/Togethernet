@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     function nameCheck() {
         if (document.getElementById('inputField1').value.length < 30 && document.getElementById('inputField1').value.length > 5) {
-            document.getElementById('inputField1').style['background-color'] = "#A5D6A7";
+         document.getElementById('inputField1').style['background-color'] = "#A5D6A7";
             
         } else {
             document.getElementById('inputField1').style['background-color'] = "#EF5350";
@@ -31,7 +31,7 @@ $(document).ready(function () {
     }
 
     function emailCheck() {
-        if (document.getElementById('inputField2').value.length < 20 && document.getElementById('inputField2').value.length > 10) {
+        if (document.getElementById('inputField2').value.length < 30 && document.getElementById('inputField2').value.length > 10) {
             document.getElementById('inputField2').style['background-color'] = "#A5D6A7";
         } else {
             document.getElementById('inputField2').style['background-color'] = "#EF5350";

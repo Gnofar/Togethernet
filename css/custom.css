@@ -227,8 +227,11 @@ a {
         padding-bottom: 0px;
     }
     .questionHeader {
-    font-size: 32px;
-}
+        font-size: 32px;
+    }
+    .mathGlyphicons {
+        font-size: 50px;
+    }
 }
 
 .questionHeader {
@@ -259,7 +262,7 @@ a {
 #submitButton {
     width: 200px;
     height: 50px;
-    background-color: white;
+    background-color: rgba(0,0,0,0.1);
     font-family: 'Dosis', sans-serif;
     margin-top: 50px;
     border-radius: 5px;
@@ -324,7 +327,7 @@ a {
 .timeText {
     font-family: monospace;
     font-size: 35px!important;
-    text-decoration:underline ;
+    text-decoration: underline;
 }
 
 .timeDescription {
@@ -338,16 +341,75 @@ a {
     font-weight: bolder;
     font-family: 'Dosis';
     color: black;
-    padding-top:20px;
-    padding-bottom:40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     text-decoration: underline;
 }
 
 .timeColorWrapper {
-    background-color: rgba(0,0,0,.1);
-    border-radius:5px;
-    margin:10px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    margin: 10px;
 }
+
 .goodToKnowWrapper {
-    padding-top:50px;
+    padding-top: 50px;
+}
+
+.shopColorWrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: auto;
+    margin: 5px;
+}
+
+.shopItemHeader {
+    font-size: 32px!important;
+    color: black;
+    font-weight: bolder;
+}
+
+.shopContentWrapper {
+    display: inline;
+}
+
+.mathGlyphicons {
+    font-size: 50px;
+}
+
+.shopCounter {
+    font-size: 32px;
+    color: black;
+}
+
+.shopInput {
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(130, 130, 130, .2);
+}
+
+#shopEmail {
+    font-size: 32px;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+}
+
+#shopEmailInput {
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(130, 130, 130, .2);
+}
+#shopBreadText {
+    font-size: 20px;
+    color: black;
 }

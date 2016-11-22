@@ -43,12 +43,12 @@ $(document).ready(function () {
     email.addEventListener('blur', emailCheck, 'false');
     payment.addEventListener('blur', paymentCheck, 'false');
     //End of section//
-    $('#infoButton').click(function () {
+    $('#aboutButton').click(function () {
         $('html, body').animate({
             scrollTop: $("#section1").offset().top
         }, 1000);
-    });
-    $('#aboutButton').click(function () {
+    });aboutButton
+    $('#infoButton').click(function () {
         $('html, body').animate({
             scrollTop: $("#section2").offset().top
         }, 1000);
@@ -64,7 +64,7 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $("#section3").offset().top
         }, 1000);
-    };
+    };  
 
     $('#tooltip1').on('click', function () {
         $('#tooltipbox1').show("slow", function () {}).delay(3000);
@@ -82,22 +82,10 @@ $(document).ready(function () {
     });
 
     $('body').on('scroll', function () {
-            console.log(Math.floor($('body').scrollTop()));
-        });
-        //Cookie oven //
-    $("submitButton").click(function () {
-            document.cookie = "true";
-        })
-        if(document.cookie ="true"){
-            $( "input[type='text']" ).prop({
-            disabled: true
-            });
-    $(".formWrapper").prop('disabled', true);
-    $("#inputField3").prop('disabled', true);
-    $(".formWrapper").css('backgroundColor', "rgba(0,0,0,0.2)");
-    $("#submitButton").text("Redan skickad");
-        }
-        //No more cookies for you!// 
+        console.log(Math.floor($('body').scrollTop()));
+    });
+    //Cookie oven //
+    //No more cookies for you!// 
 })
 
 $(function () {
@@ -106,4 +94,5 @@ $(function () {
         typeSpeed: 30
     });
 });
+
 console.log('Javascripts loads');

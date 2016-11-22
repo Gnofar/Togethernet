@@ -23,10 +23,13 @@
         color: antiquewhite" id="test">Togethernet är vi... <span class="typed-cursor ">|</span></span>
                 <div class="row" style="padding-top:75px;">
                     <div class="col-md-4 col-xs-4">
-                        <div class="card"> <span class="glyphicon glyphicon-heart" style="font-size:80px; color:#B71C1C;"> </span> <div class="card-block"> <h4 class="card-title" style="color:white;">Om Togethernet</h4> </div> <button id="aboutButton" class="landingJumbotronButton" style="background-color:#424242;">Om oss</button> </div>
+                        <div class="card"> <span class="glyphicon glyphicon-heart" style="font-size:80px; color:#B71C1C;"> </span>
+                            <div class="card-block">
+                                <h4 class="card-title" style="color:white;">Om Togethernet</h4>
+                            </div> <button id="aboutButton" class="landingJumbotronButton" style="background-color:#424242;">Om oss</button> </div>
                     </div>
                     <div class="col-md-4 col-xs-4">
-                          <div class="card">
+                        <div class="card">
                             <span class="glyphicon glyphicon-info-sign" style="font-size:80px; color:white;"> </span>
                             <div class="card-block">
                                 <h4 class="card-title" style="color:white;">Information</h4>
@@ -86,24 +89,24 @@
         </div>
         <div class="row">
             <div class="goodToKnowWrapper">
-            <div class="col-md-4 col-xs-12">
-                <div class="card glyphiconCards text-center">
-                    <span style="font-color:black; font-size:150px!important;" class="glyphicon glyphicon-calendar
+                <div class="col-md-4 col-xs-12">
+                    <div class="card glyphiconCards text-center">
+                        <span style="font-color:black; font-size:150px!important;" class="glyphicon glyphicon-calendar
 " id="glyphiconHeader"></span>
-                    <div class="card-block">
-                        <h4 class="card-title">När? var? hur?</h4>
+                        <div class="card-block">
+                            <h4 class="card-title">När? var? hur?</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8 col-xs-12">
-                <h3>När börjar det <b>exakt?!</b><br></h3>
-                <p>Vi börjar insläpp klockan 18:00 och efter det är det drop in som gäller, fast det är så klart roligare om du är där när det börjar</p>
+                <div class="col-md-8 col-xs-12">
+                    <h3>När börjar det <b>exakt?!</b><br></h3>
+                    <p>Vi börjar insläpp klockan 18:00 och efter det är det drop in som gäller, fast det är så klart roligare om du är där när det börjar</p>
 
-                <h3>LAN dagen<br></h3>
-                <p>Under lan dagen så kommer Togethernet efter skolan blockera av arkaden och för att förbereda lanet, om man tror att man inte hinner hem och tillbaka så kan man lägga av sig utrustningen på morgonen. </p>
+                    <h3>LAN dagen<br></h3>
+                    <p>Under lan dagen så kommer Togethernet efter skolan blockera av arkaden och för att förbereda lanet, om man tror att man inte hinner hem och tillbaka så kan man lägga av sig utrustningen på morgonen. </p>
 
+                </div>
             </div>
-        </div>
         </div>
         <h5 class="infoHeader text-center">Schema</h5>
         <div class="row">
@@ -403,20 +406,21 @@
     </div>
     <!--"Anmälan"-->
     <div class="sectionContainer container-fluid" id="section3" style="background-color:#FFCC80">
-        <h1 class="text-center sectionHeader">Anmälan till Togethernet</h1>
+        <h1 class="text-center sectionHeader">Anmälan och shop</h1>
+        <h5 class="infoHeader text-center">Anmälan</h5>
         <form action="anmalanProcess.php" method="post">
             <div class="row">
                 <div class="col-md-4 col-xs-12">
                     <h4 class="text-center"> Namn <span class="glyphicon glyphicon-info-sign" id="tooltip1"></span> </h4>
 
-                    <input type="text" class="formWrapper center-block" name="nameIn" id="inputField1">
+                    <input type="text" class="formWrapper center-block" name="nameIn" id="inputField1" required>
                     <div class="tooltipBox center-block formWrapper" id="tooltipbox1">
                         <p class="text-center"> Använd ditt förnamn och efternamn, vi kommer använda ditt namn för att identifiera dig i placering. Togethernet delar aldrig privat information med tredjeparter.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12">
                     <h4 class="text-center"> Email <span class="glyphicon glyphicon-info-sign" id="tooltip2"></span></h4>
-                    <input type="text" class="center-block formWrapper" name="mailIn" id="inputField2">
+                    <input type="text" class="center-block formWrapper" name="mailIn" id="inputField2" required>
                     <div class="tooltipBox center-block" id="tooltipbox2">
                         <p class="text-center"> Använd endast din SSIS email. Vi kommer att använda denna email för att kunna verifiera dig, dubbelkolla stavfel</p>
                     </div>
@@ -424,7 +428,7 @@
                 <div class="col-md-4 col-xs-12">
                     <h4 class="text-center"> Betalningsmetod <span class="glyphicon glyphicon-info-sign" id="tooltip3"></span>
                     </h4>
-                    <select class="center-block formWrapper" name="payIn" id="inputField3">
+                    <select class="center-block formWrapper" name="payIn" id="inputField3" required>
                     <option>Kontant</option>
                     <option>Swish</option>
                 </select>
@@ -433,14 +437,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
                     <button type="submit" class="formWrapper center-block" id="submitButton" href="#section3"> Skicka in       
                     </button>
-                    <p style="font-style:italic;">pssst... Har du redan bokat kan du klicka <a href="https://lan.ssis.nu/verify">här</a> för att se din status</p>
-                </div>
-            </div>
+                    <p style="font-style:italic;"><i>Pssstt</i> vi har även en shop för alla inköp relaterade till lanet, klicka <a href="http://jala.ssis.nu/shop.html">här</a> för komma dit</p>
         </form>
+
     </div>
 
     <footer>

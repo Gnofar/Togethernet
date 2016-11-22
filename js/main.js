@@ -64,7 +64,7 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $("#section3").offset().top
         }, 1000);
-    };
+    };  
 
     $('#tooltip1').on('click', function () {
         $('#tooltipbox1').show("slow", function () {}).delay(3000);

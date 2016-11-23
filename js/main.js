@@ -85,7 +85,13 @@ $(document).ready(function () {
         console.log(Math.floor($('body').scrollTop()));
     });
     //Cookie oven //
+    
     //No more cookies for you!// 
+    
+    //Price checker//
+    $('#productNumber1').change(function(){
+        console.log($('#productNumber1').value);
+    })
 })
 
 $(function () {

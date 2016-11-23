@@ -262,7 +262,7 @@ a {
 #submitButton {
     width: 200px;
     height: 50px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     font-family: 'Dosis', sans-serif;
     margin-top: 50px;
     border-radius: 5px;
@@ -367,6 +367,7 @@ a {
     font-size: 32px!important;
     color: black;
     font-weight: bolder;
+    margin: 0;
 }
 
 .shopContentWrapper {
@@ -409,7 +410,57 @@ a {
     border-radius: 5px;
     border: 2px solid rgba(130, 130, 130, .2);
 }
-#shopBreadText {
+
+.shopBreadText {
     font-size: 20px;
     color: black;
+}
+
+.shopItemTitle {
+    color: black;
+    font-size: 64px!important;
+    font-family: 'Dosis', sans-serif;
+}
+
+.shoppingHeader {
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Dosis';
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#pstText {
+    color: black;
+    font-size: 12px;
+}
+
+#codeInput {
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(130, 130, 130, .2);
+}
+
+#shopCode {
+    font-size: 32px;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+}
+.shopPrice {
+    color:black;
+    font-size: 28px;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+.backLink {
+    font-size: 48px;
+    color:black;
+    font-weight: bolder;
 }

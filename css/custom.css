@@ -24,6 +24,7 @@ p {
 
 .headerWrapper {
     background-image: url("../img/header.jpg");
+    box-shadow: 10px 5px 5px black;
 }
 
 .jumbotron h1,
@@ -89,6 +90,7 @@ p {
     background-color: white;
     margin: 0;
     min-height: 100vh;
+    box-shadow: 10px 5px 5px black;
 }
 
 .sectionContainer input,
@@ -463,4 +465,50 @@ a {
     font-size: 48px;
     color:black;
     font-weight: bolder;
+}
+
+.numbers {
+    padding: 0px;
+    width: 45px;
+    text-align: center;
+    font-family: Arial;            
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;      
+}
+.title {   
+    border-style: none;
+    padding: 0px 0px 3px 0px;
+    width: 45px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;   
+    color: #FFFFFF;     
+}
+#table {
+    width: 400px;
+    height: 70px;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: #666666;     
+    background-color: #222222;  
+    margin: 0px auto;
+    position: relative;  
+    top: 0px;            
+    left: 0px;        
+}
+#quietRoomText {
+    font-size="18px";
+}
+
+#quietRoomWrapper {
+
+    display: inline;
+}
+
+
+#inputField4 {
+    font-size:22px;
 }

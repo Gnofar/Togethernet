@@ -12,6 +12,7 @@ function countdown()
 
 $(document).ready(function () {
     //For input verifier//
+    if(window.location.pathname == "/index.html"){
     var name = document.getElementById('inputField1');
     var email = document.getElementById('inputField2');
     var payment = document.getElementById('inputField3');
@@ -42,6 +43,7 @@ $(document).ready(function () {
     name.addEventListener('blur', nameCheck, 'false');
     email.addEventListener('blur', emailCheck, 'false');
     payment.addEventListener('blur', paymentCheck, 'false');
+    }
     //End of section//
     $('#aboutButton').click(function () {
         $('html, body').animate({
@@ -92,6 +94,9 @@ $(document).ready(function () {
     $('#productNumber1').change(function(){
         console.log($('#productNumber1').value);
     })
+
+}
+    console.log('Javascripts loads');
 })
 
 $(function () {
@@ -101,4 +106,3 @@ $(function () {
     });
 });
 
-console.log('Javascripts loads');

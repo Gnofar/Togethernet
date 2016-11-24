@@ -14,6 +14,7 @@
 
 <body>
     <header>
+        
         <div class="jumbotron text-center" id="landingJumbotron">
             <div class="" id="headerWrapper">
                 <h1>Togethernet </h1>
@@ -410,7 +411,7 @@
         <h5 class="infoHeader text-center">Anmälan</h5>
         <form action="anmalanProcess.php" method="post">
             <div class="row">
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <h4 class="text-center"> Namn <span class="glyphicon glyphicon-info-sign" id="tooltip1"></span> </h4>
 
                     <input type="text" class="formWrapper center-block" name="nameIn" id="inputField1" required>
@@ -418,14 +419,14 @@
                         <p class="text-center"> Använd ditt förnamn och efternamn, vi kommer använda ditt namn för att identifiera dig i placering. Togethernet delar aldrig privat information med tredjeparter.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <h4 class="text-center"> Email <span class="glyphicon glyphicon-info-sign" id="tooltip2"></span></h4>
                     <input type="text" class="center-block formWrapper" name="mailIn" id="inputField2" required>
                     <div class="tooltipBox center-block" id="tooltipbox2">
                         <p class="text-center"> Använd endast din SSIS email. Vi kommer att använda denna email för att kunna verifiera dig, dubbelkolla stavfel</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <h4 class="text-center"> Betalningsmetod <span class="glyphicon glyphicon-info-sign" id="tooltip3"></span>
                     </h4>
                     <select class="center-block formWrapper" name="payIn" id="inputField3" required>
@@ -436,10 +437,16 @@
                         <p class="text-center">Använder du Swish så skickar du pengar till XXXX och signerar med samma namn som du anmälde dig med, var noga med att betala först efter du har fått ditt konfirmations email. Betalar du kontant så börjar vi ta emot betalningar under dagen då lanet sker</p>
                     </div>
                 </div>
+                <div class="col-md-3 col-xs-12 col-ls-3" class="">
+                <div class="center-block">
+                <p class="">För er som föredrar sitta i ett tyst rum</p>
+                <input type="checkbox" class="" id="inputField4">
+                    </div>
+                </div>
             </div>
-                    <button type="submit" class="formWrapper center-block" id="submitButton" href="#section3"> Skicka in       
+            <button type="submit" class="formWrapper center-block" id="submitButton" href="#section3"> Skicka in       
                     </button>
-                    <p style="font-style:italic;"><i>Pssstt</i> vi har även en shop för alla inköp relaterade till lanet, klicka <a href="http://jala.ssis.nu/shop.html">här</a> för komma dit</p>
+            <p><i>Pssstt vi har även en shop för alla inköp relaterade till lanet, klicka <a href="http://jala.ssis.nu/shop.html">här</a> för komma dit</i></p>
         </form>
 
     </div>

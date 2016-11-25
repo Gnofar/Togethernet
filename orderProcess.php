@@ -20,18 +20,21 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connection_error);
 }
 //db insertion
-$sql = "INSERT INTO bestall (produkt1, produkt2, produkt3, produkt4, produkt5, produkt6, produkt7, produkt8, produkt9, produkt10, produkt11, produkt12 )
-VALUES ('$_POST[produkt1In]', '$_POST[produkt2In]', '$_POST[produkt3In]', '$_POST[produkt4In]', '$_POST[produkt5In]', '$_POST[produkt6In]', '$_POST[produkt7In]', '$_POST[produkt8In]', '$_POST[produkt9In]', '$_POST[produkt10In]', '$_POST[produkt11In]', '$_POST[produkt12In]')";
+$sql = "INSERT INTO bestall (produkt1, produkt2, produkt3, produkt4, produkt5, produkt6, produkt7, produkt8, produkt9, produkt10, mail )
+VALUES ('$_POST[produkt1In]', '$_POST[produkt2In]', '$_POST[produkt3In]', '$_POST[produkt4In]', '$_POST[produkt5In]', '$_POST[produkt6In]', '$_POST[produkt7In]', '$_POST[produkt8In]', '$_POST[produkt9In]', '$_POST[produkt10In]', '$_POST[mailIn]')";
 
-echo $_POST['produkt1In'];
+//USE PDO IN FUTURE
+
+    echo $_POST['produkt1In'];
+
 
 //db confirmation
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('Tack för din order!');</script>";
-    //echo "<script>setTimeout(\"location.href = '/#section3';\",00);</script>"; //insert new link here 
+   // echo "<script>setTimeout(\"location.href = '/shop.html';\",00);</script>"; 
 
 } else {
-    header( 'http://alcaj.ssis.nu/404.html' ) ;
+    header( 'http://alcaj.ssis.nu/404.html') ;
 }
 // End of DB
 // Start Mailer

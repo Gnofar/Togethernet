@@ -16,15 +16,12 @@
  <body>
     <form>
         <h4 class="shoppingHeader text-center">Togethernet shoppen</h4>
-        <a href="/index.html"><p class="backLink">Tillbaka</p></a>
-        
+        <p class="backLink"><a style="color:black;" href="/index.html">Tillbaka</a></p>
         <div class="row">
             <div class="col-md-6">
                 <p class="shopBreadText">Här kan du beställa snacks och dricka till nästa Togethernet LAN, shoppen stänger på torsdag kväll och du betalar antigen i kontant eller med Swish. För att kunna beställa så måste du ha anmält dig till lanet och fått en bekräftelsekod. Det kommer även finnas en shop på lanet.</p>
                 <p id="pstText"><i>psssstt... om du betalar med kontant så erbjuder vi inte växling</i></p>
             </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="img/DSC_0608.jpg">
             </div>
         </div>
         <h1 class="shopItemTitle text-center">Läsk</h1>
@@ -53,7 +50,7 @@
                     <p class="card-title text-center shopItemHeader">Fanta Exotic</p>
                     <p class="shopPrice text-center">20kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput priceClass20" type="number">
+                        <input class="center-block shopInput priceClass20" type="number" min="0" max="10">
                     </div>
                 </div>
             </div>
@@ -71,7 +68,7 @@
                     <p class="card-title text-center shopItemHeader">Mountain Dew</p>
                     <p class="shopPrice text-center">20kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput" type="number" min="0" max="10">
+                        <input class="center-block shopInput priceClass20" type="number" min="0" max="10">
                     </div>
                 </div>
             </div>
@@ -80,7 +77,7 @@
                     <p class="card-title text-center shopItemHeader">Sprite</p>
                     <p class="shopPrice text-center">20kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput" type="number" min="0" max="10" id="productNumber1">
+                        <input class="center-block shopInput priceClass20" type="number" min="0" max="10" id="productNumber1">
                     </div>
                 </div>
             </div>
@@ -92,7 +89,7 @@
                     <p class="card-title text-center shopItemHeader">Chips gräddfil</p>
                     <p class="shopPrice text-center">20kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput" type="number" min="0" max="10">
+                        <input class="center-block shopInput priceClass20" type="number" min="0" max="10">
                     </div>
                 </div>
             </div>
@@ -101,7 +98,7 @@
                     <p class="card-title text-center shopItemHeader">Chips plain</p>
                     <p class="shopPrice text-center">20kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput" type="number" min="0" max="10">
+                        <input class="center-block shopInput priceClass20" type="number" min="0" max="10">
                     </div>
                 </div>
             </div>
@@ -110,7 +107,7 @@
                     <p class="card-title text-center shopItemHeader">Doritos</p>
                     <p class="shopPrice text-center">20kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput" type="number" min="0" max="10">
+                        <input class="center-block shopInput priceClass20" type="number" min="0" max="10">
                     </div>
                 </div>
             </div>
@@ -119,7 +116,7 @@
                     <p class="card-title text-center shopItemHeader">Billy's (originel)</p>
                     <p class="shopPrice text-center">10kr</p>
                     <div class="shopContentWrapper">
-                        <input class="center-block shopInput" type="number" min="0" max="10">
+                        <input class="center-block shopInput priceClass10" type="number" min="0" max="10">
                     </div>
                 </div>
             </div>
@@ -130,10 +127,11 @@
                 <input type="text" class="center-block" id="shopEmailInput" required>
             </div>
             <div class="col-md-4 col-xs-12">
-                <h4 class="text-center" id="shopCode"> Verifikations kod</h4>
+                <h4 class="text-center" id="shopCode"> Verifikationskod</h4>
                 <input id="codeInput" required class="center-block shopInput" type="text">
             </div>
             <div class="col-md-4 col-xs-12">
+                <p id="shopCost" class="text-center">0kr</p>
                 <input id="submitButton" type="submit" class="center-block shopInput">
             </div>
 
@@ -145,7 +143,6 @@
         <p>Powered by coffee</p>
 </footer>
 <!--  JAVASCRIPTS  -->
-<script src="js/countdown.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>

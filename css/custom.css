@@ -266,7 +266,6 @@ a {
     height: 50px;
     background-color: rgba(0, 0, 0, 0.1);
     font-family: 'Dosis', sans-serif;
-    margin-top: 50px;
     border-radius: 5px;
     text-decoration: none;
     border: none;
@@ -511,4 +510,11 @@ a {
 
 #inputField4 {
     font-size:22px;
+}
+
+#shopCost {
+    color:black;
+    font-size: 32px;
+    font-weight: bolder;
+    margin:0;
 }

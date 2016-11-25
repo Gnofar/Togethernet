@@ -94,6 +94,7 @@ $(document).ready(function () {
     //Price checker//
     var firstData;
     var lastData;
+    var totalPrice = 0;
     $('.priceClass20').focus(function () {
         firstData = ($(this).val());
         if (firstData == '') {
@@ -105,18 +106,56 @@ $(document).ready(function () {
     $('.priceClass20').blur(function () {
         lastData = ($(this).val());
         if (lastData > firstData) {
-            //function priceAdd(lastData-firstData);
+            priceAdd(lastData - firstData, "20");
             console.log(Math.abs(lastData - firstData));
+        } else {
+            priceDecrease(firstData - lastData, "20");
+            console.log(Math.abs(firstData - lastData));
         }
-        else{
-            //function priceDecrease(firstData - lastData));
+    })
+        $('.priceClass10').focus(function () {
+        firstData = ($(this).val());
+        if (firstData == '') {
+            firstData = 0;
+        }
+        console.log(firstData);
+        //function priceCheck ('priceClass20', lastData);
+    })
+    $('.priceClass10').blur(function () {
+        lastData = ($(this).val());
+        if (lastData > firstData) {
+            priceAdd(lastData - firstData, "");
+            console.log(Math.abs(lastData - firstData));
+        } else {
+            priceDecrease(firstData - lastData, "");
             console.log(Math.abs(firstData - lastData));
         }
     })
 
+    function priceAdd(valueIn, priceClass) {
+        if (priceClass == "20") {
+            totalPrice += valueIn * 20;
+            $('#shopCost').text(totalPrice + "kr");
+        } else {
+            totalPrice += valueIn * 10;
+            $('#shopCost').text(totalPrice + "kr");
+        }
+    }
+
+    function priceDecrease(valueIn, priceClass) {
+        if (priceClass == "20") {
+            totalPrice -= valueIn * 20;
+            $('#shopCost').text(totalPrice + "kr");
+        } else {
+            totalPrice -= valueIn * 10;
+            $('#shopCost').text(totalPrice + "kr");
+        }
+    }
+
+
     console.log('Javascripts loads');
 });
-    //End of pricechecker//
+//Ed of pricechecker//
 $(function () {
     $("#subBreadText").typed({
         strings: ["Togethernet är....", "Togethernet är elever", "Togethernet är sammhörighet", "Togethernet är vi..."],

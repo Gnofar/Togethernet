@@ -19,26 +19,25 @@ p {
 .jumbotron .h4 {
     font-size: 4vw;
     font-family: 'Dosis', sans-serif;
-    color: antiquewhite;
+    color: white;
 }
 
 .headerWrapper {
     background-image: url("../img/header.jpg");
-    box-shadow: 10px 5px 5px black;
 }
 
 .jumbotron h1,
 .jumbotron .h1 {
     font-size: 12vw;
     font-family: 'Dosis', sans-serif;
-    color: antiquewhite;
+    color: white;
 }
 
 .jumbotron h3,
 .jumbotron .h3 {
     font-size: 6vw;
     font-family: 'Dosis', sans-serif;
-    color: antiquewhite;
+    color: white;
 }
 
 #landingJumbotron {
@@ -50,7 +49,7 @@ p {
 
 #landingJumbotron h1,
 p {
-    color: antiquewhite;
+    color: white;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -62,7 +61,7 @@ p {
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    color: antiquewhite;
+    color: white;
     width: 125px;
 }
 
@@ -74,7 +73,7 @@ p {
     padding-bottom: 100px;
     font-size: 48px;
     font-family: 'Dosis', sans-serif;
-    color: antiquewhite;
+    color: white;
 }
 
 .sectionContainer h1,
@@ -90,7 +89,6 @@ p {
     background-color: white;
     margin: 0;
     min-height: 100vh;
-    box-shadow: 10px 5px 5px black;
 }
 
 .sectionContainer input,
@@ -157,7 +155,7 @@ a {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
     font-size: 48px;
-    color: antiquewhite;
+    color: white;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -210,7 +208,7 @@ a {
         padding-bottom: 100px;
         font-size: 48px;
         font-family: 'Dosis', sans-serif;
-        color: antiquewhite;
+        color: white;
     }
     #landingJumbotron h1 {
         font-size: 76px;
@@ -233,6 +231,9 @@ a {
     }
     .mathGlyphicons {
         font-size: 50px;
+    }
+    .backLink {
+        font-size: 24px!important;
     }
 }
 
@@ -264,12 +265,13 @@ a {
 #submitButton {
     width: 200px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: white;
     font-family: 'Dosis', sans-serif;
     border-radius: 5px;
     text-decoration: none;
     border: none;
     font-size: 30px;
+    border: 2px solid rgba(130, 130, 130, .2);
 }
 
 #section3 {
@@ -424,7 +426,7 @@ a {
 }
 
 .shoppingHeader {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bolder;
     font-family: 'Dosis';
     color: black;
@@ -434,7 +436,7 @@ a {
 
 #pstText {
     color: black;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #codeInput {
@@ -453,8 +455,9 @@ a {
     font-family: 'Dosis', sans-serif;
     color: black;
 }
+
 .shopPrice {
-    color:black;
+    color: black;
     font-size: 28px;
     font-family: 'Dosis', sans-serif;
     margin: 0;
@@ -462,7 +465,7 @@ a {
 
 .backLink {
     font-size: 48px;
-    color:black;
+    color: black;
     font-weight: bolder;
 }
 
@@ -470,51 +473,95 @@ a {
     padding: 0px;
     width: 45px;
     text-align: center;
-    font-family: Arial;            
+    font-family: Arial;
     font-size: 28px;
     font-weight: bold;
     font-style: normal;
-    color: #FFFFFF;      
+    color: #FFFFFF;
 }
-.title {   
+
+.title {
     border-style: none;
     padding: 0px 0px 3px 0px;
     width: 45px;
     text-align: center;
     font-family: Arial;
     font-size: 10px;
-    font-weight: bold;   
-    color: #FFFFFF;     
+    font-weight: bold;
+    color: #FFFFFF;
 }
+
 #table {
     width: 400px;
     height: 70px;
     border-style: ridge;
     border-width: 3px;
-    border-color: #666666;     
-    background-color: #222222;  
+    border-color: #666666;
+    background-color: #222222;
     margin: 0px auto;
-    position: relative;  
-    top: 0px;            
-    left: 0px;        
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
+
 #quietRoomText {
     font-size="18px";
 }
 
 #quietRoomWrapper {
-
     display: inline;
 }
 
-
 #inputField4 {
-    font-size:22px;
+    font-size: 22px;
 }
 
 #shopCost {
-    color:black;
+    color: black;
     font-size: 32px;
     font-weight: bolder;
-    margin:0;
+    margin: 0;
+}
+
+.list {}
+
+.listItem {
+    font-size: 48px;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+}
+
+.numbers {
+    padding: 0px;
+    width: 45px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.title {
+    border-style: none;
+    padding: 0px 0px 3px 0px;
+    width: 45px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#table {
+    width: 400px;
+    height: 70px;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: #666666;
+    background-color: #222222;
+    margin: 0px auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }

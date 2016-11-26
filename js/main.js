@@ -144,6 +144,7 @@ $(document).ready(function () {
                 setTimeout("countdown(theyear,themonth,theday,thehour,theminute)", 1000);
             }
         }
+        countdown(2016,12,2,18,0);
     }
     //Cookie oven //
 

@@ -124,6 +124,7 @@ footer {
     height: 50px;
     width: 100%;
     margin: 0;
+    font-size:11px;
 }
 
 footer p,
@@ -540,28 +541,4 @@ a {
     font-weight: bold;
     font-style: normal;
     color: #FFFFFF;
-}
-
-.title {
-    border-style: none;
-    padding: 0px 0px 3px 0px;
-    width: 45px;
-    text-align: center;
-    font-family: Arial;
-    font-size: 10px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-#table {
-    width: 400px;
-    height: 70px;
-    border-style: ridge;
-    border-width: 3px;
-    border-color: #666666;
-    background-color: #222222;
-    margin: 0px auto;
-    position: relative;
-    top: 0px;
-    left: 0px;
 }

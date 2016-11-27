@@ -9,8 +9,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "alcaj";
+$password = "KnarkKnark123";
 $dbname = "alcaj";
 
 //connection
@@ -18,13 +18,42 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // check conn
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connection_error);
+	$connCheck = false;
+} else {
+	$connCheck = TRUE;
+	//echo "conn working";
 }
+//start of string code gen
+function generateRandomString($length = 5) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+$kodIn = generateRandomString();
+//end of string gen
 //db insertion
-$sql = "INSERT INTO togethernet (namn, mail, betalning)
-VALUES ('$_POST[nameIn]', '$_POST[mailIn]', '$_POST[payIn]')";
+
+mysqli_query($conn, "CREATE TEMPORARY TABLE togethernet LIKE Saker ");
+
+
+
+$nameInput = mysqli_real_escape_string($conn, $_POST['nameIn']);
+$mailInput = mysqli_real_escape_string($conn, $_POST['mailIn']);
+$payInput = mysqli_real_escape_string($conn, $_POST['payIn']);
+$kodInput = mysqli_real_escape_string($conn, $kodIn);
+
+
+if (mysqli_query($conn, "INSERT into togethernet (namn, mail, betalning, kod) VALUES ('$nameInput', '$mailInput','$payInput', '$kodInput')")) {
+    //printf("%d Row inserted.\n", mysqli_affected_rows($conn));
+}
 
 //db confirmation
-if ($conn->query($sql) === TRUE) {
+if ($connCheck === TRUE) {
 	  $last_id = $conn->insert_id;
                // echo $last_id;
     	if ($last_id <= 100) {
@@ -38,6 +67,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
     header( 'http://alcaj.ssis.nu/404.html') ;
 }
+mysqli_close($conn);
 // End of DB
 //compose mail
 $str = "                                          
@@ -56,23 +86,15 @@ $str = "
     </li>
 </ul>";
 
-function generateRandomString($length = 5) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-}
+
 $str .=  "För köp av varor i våran shop behöver du följande kod. Alla köp med denna kod kopplas direkt till dig.";
 $str .=  "<br>";
 $str .=  "<br>";
-$str .=  generateRandomString();
+$str .=  $kodInput;
 $str .=  "<br>";
 
    
-$str .= "Hoppas du kommer och att det blir kul, vi ses den andra december (2/12)!
+$str .= "<p>Hoppas du kommer och att det blir kul, vi ses den andra december (2/12)!
 </p>
 <p>
 Med vänlig hälsning vi på Togethernet
@@ -90,7 +112,7 @@ $transport = \Swift_SmtpTransport::newInstance('smtp.gmail.com', 465,'ssl')->set
 $mailer = \Swift_Mailer::newInstance($transport);
 $message = \Swift_Message::newInstance('Tack för din anmälan!')
    ->setFrom(array('togethernet@stockholmscience.se' => 'Togethernet'))
-   ->setTo(array($_POST['mailIn'] => "Mottagare"))
+   ->setTo(array($mailInput => "Mottagare"))
    ->setBody($str, 'text/html');
 $result = $mailer->send($message);
 }
@@ -99,3 +121,5 @@ $result = $mailer->send($message);
 
 </body>
 </html>
+
+

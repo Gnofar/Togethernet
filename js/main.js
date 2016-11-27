@@ -155,7 +155,7 @@ $(document).ready(function () {
 //Ed of pricechecker//
 $(function () {
     $("#subBreadText").typed({
-        strings: ["Togethernet är....", "Togethernet är ett lan", "Togethernet är bra", "Togethernet är vi..."],
+        strings: ["Togethernet är....", "Togethernet är intensivt", "Togethernet är en passion","Togethernet är sammhörighet", "Togethernet är vi..."],
         typeSpeed: 30
     });
 });

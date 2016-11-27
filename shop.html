@@ -32,7 +32,7 @@
                         <p class="card-title text-center shopItemHeader">Coca Cola</p>
                         <p class="shopPrice text-center">20kr</p>
                         <div class="shopContentWrapper">
-                            <input class="center-block shopInput priceClass20" type="number" min="0" max="10" name="produkt1In">
+                            <input class="center-block shopInput priceClass20" type="number" min="0" max="10" name="produkt1In" >
                         </div>
                     </div>
                 </div>
@@ -135,10 +135,11 @@
                 </div>
                 <div class="col-md-4 col-xs-12">
                     <h4 class="text-center" id="shopCode"> Verifikationskod</h4>
-                    <input id="codeInput" required class="center-block shopInput" type="text">
+                    <input id="codeInput" required class="center-block shopInput" type="text" name="kodIn">
                 </div>
                 <div class="col-md-4 col-xs-12">
                     <p id="shopCost" class="text-center">0kr</p>
+                    <input type="hidden" id="shopCost" name="totprice">
                     <input id="submitButton" type="submit" class="center-block shopInput">
                     <p id="pstText" class="text-center"><b>Om du betalar med kontant så erbjuder vi inte växling</b></p>
                 </div>

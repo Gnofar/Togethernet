@@ -199,7 +199,7 @@ $(document).ready(function () {
                 totalPrice += valueIn * 10;
                 $('#shopCost').text(totalPrice + "kr");
             }
-        }
+        }$('input[name="totprice"]');
 
         function priceDecrease(valueIn, priceClass) {
             if (priceClass == "20") {
@@ -211,7 +211,6 @@ $(document).ready(function () {
             }
         }
     }
-
     console.log('Javascripts loads');
 });
 //Ed of pricechecker//

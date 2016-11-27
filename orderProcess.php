@@ -114,7 +114,9 @@ $str = "
             }
     }
     
-$str .= "<p>
+$str .= "<p> Är det inte du som beställt? Beställningar dubbelkollas i våran databas. Ta kontakt med oss på Togethernet.
+</p>
+<p>
     Hoppas dina Doritos smakar, vi ses den andra december (2/12)!
 </p>
 <p>

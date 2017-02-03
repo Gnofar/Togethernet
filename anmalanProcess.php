@@ -87,7 +87,7 @@ if (mysqli_query($conn, "INSERT into togethernet (namn, mail, betalning, kod) VA
 
 //db confirmation
 
-$dbFolk = 183; // Behöver manuellt uppdateras atm. Hur många ligger i db innan anmälan öppnar.?
+$dbFolk = 184; // Behöver manuellt uppdateras atm. Hur många ligger i db innan anmälan öppnar.?
 
 if ($connCheck === TRUE) {
 	  $last_id = $conn->insert_id;

@@ -25,6 +25,11 @@ if ($conn->connect_error) {
 }
 //db insertion
 //sql injection protection
+
+    echo "<script>setTimeout(\"location.href = '/index.html#section3';\",00);</script>";
+    echo "<script>alert('Då inga konfirmationskoder ännu delats ut så är inte shoppen tillgänglig.');</script>";
+    exit();
+
 $produkterIn = array(
     $_POST['produkt1In'],
     $_POST['produkt2In'],
